@@ -73,7 +73,7 @@ body{
     text-transform: uppercase;
     font-weight: 900;
     opacity: 0;
-    animation-name: animee;
+    /* animation-name: animee; */
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
 
@@ -117,7 +117,7 @@ body{
     background-color: #0B0B0B;
 }
 #page1{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-color: #151515;
 }
@@ -409,6 +409,7 @@ body{
 }
 #footer-div h6{
     font-size: 0.9vw;
+    margin-top: 1vw;
     margin-bottom: 1.5vw;
 }
 .box{
