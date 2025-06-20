@@ -23,13 +23,13 @@ tl.from("#line1-part1",{
     }
 });
 tl.to(".line h2",{
-    animationName:"anime",
+    animationName:"animee",
     opacity:0
 })
 tl.to("#loader", {
     opacity: 0,
-    duration: 0.2,
-    delay: 0
+    duration: 0.8,
+    delay: 3.4
 });
 tl.from("#page1",{
     delay:0.2,
