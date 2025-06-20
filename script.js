@@ -34,7 +34,7 @@ tl.to("#loader", {
 tl.from("#page1",{
     delay:0.2,
     y:1600,
-    opacity:0,
+    duration:0.6,
     ease:Power4
 })
 tl.to("#loader",{
@@ -44,7 +44,7 @@ tl.from("#nav", {
     opacity:0
 })
 tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1", {
-    y:120,
+    y:140,
     stagger:0.2
 })
 }
