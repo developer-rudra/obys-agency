@@ -58,7 +58,8 @@ function loadingAnimation() {
 
     tl.to("#loader", {
         opacity: 0,
-        duration: 0.2
+        duration: 0.2,
+        delay:4
     });
 
     tl.from("#page1", {
@@ -127,3 +128,23 @@ sheryAnimation()
 loadingAnimation()
 cursorAnimation()
 locomotiveAnimation()
+
+
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#flag", {
+        x:dets.x,
+        y:dets.y
+    })
+})
+document.querySelector("#hero3").addEventListener("mouseenter", 
+    function(){
+        gsap.to("#flag",{
+            opacity:1
+        })
+})
+document.querySelector("#hero3").addEventListener("mouseleave", 
+    function(){
+        gsap.to("#flag",{
+            opacity:0
+        })
+})
