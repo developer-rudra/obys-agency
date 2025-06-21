@@ -91,9 +91,39 @@ function cursorAnimation() {
     });
 
     Shery.makeMagnet("#nav-part2 h4");
+
+
+
+
+    var videoContainer = document.querySelector("#video-container")
+    var video = document.querySelector("#video-container video")
+    videoContainer.addEventListener("mouseenter", function(){
+        videoContainer.addEventListener("mousemove", function(dets){
+            gsap.to("#video-cursor", {
+                left:dets.x - 580,
+                y:dets.y - 350
+            })
+        })
+    });
+    videoContainer.addEventListener("click", function(){
+        video.play()
+        video.style.opacity = 1
+        document.querySelector("#video-cursor").innerHTML = `<i class="ri-pause-line"></i>`
+    })
+
+
+
+}
+function sheryAnimation() {
+    Shery.imageEffect(".image-div", {
+        style:5,
+        // debug:true
+        gooey:true
+    })
 }
 
 // Run animations
-loadingAnimation();
-cursorAnimation();
-locomotiveAnimation();
+sheryAnimation()
+loadingAnimation()
+cursorAnimation()
+locomotiveAnimation()
