@@ -450,6 +450,7 @@ body{
     min-height: 100vh;
     width: 100%;
     position: relative;
+    margin-top: 14vw;
 }
 .elem{
     /* background-color: red; */
@@ -760,7 +761,6 @@ body{
     
 }
 .page3-circle1{
-    display: none;
     height: 23vw;
     width: 23vw;
     border: 2px solid #fff;
@@ -771,12 +771,13 @@ body{
     margin-top: 23vh;
     margin-left: 10vw;
     position: relative;
+    display: none;
+    opacity: 0;
 }
 .page3-circle1 svg{
     height: 30%;
 }
 .page3-circle2{
-    display: none;
     height: 23vw;
     width: 23vw;
     border: 2px solid #fff;
@@ -786,6 +787,7 @@ body{
     justify-content: center;
     margin-bottom: 20vw;
     position: relative;
+    display: none;
 }
 .page3-circle2 svg{
     display: none;
@@ -793,7 +795,6 @@ body{
     rotate: -45deg;
 }
 .circle-in{
-    display: none;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -839,6 +840,8 @@ body{
 }
 #page4{
     min-height: 100vh;
+    /* margin-top: 10vw; */
+    /* background-color: red; */
     width: 100%;
     position: relative;
     /* background-color: rgb(61, 61, 61); */
@@ -919,4 +922,129 @@ body{
     width: 40%;
     font-size: 3.7vw;
 }
+#page5{
+    min-height: 48vh;
+    width: 100%;
+    position: relative;
+    margin-top: 64vw;
+    margin-bottom: 0;
+}
+.elem{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: -1vw;
+}
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.elem2{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: -1vw;
+}
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    transform: translate(calc(-100% - 20px));
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.elem span{
+    font-style: italic;
+    font-family: silk serif;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: silk serif;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+#footer{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    padding-left: 28vw;
+    padding-right: 2vw;
+}
+#footer h1{
+    font-size: 12vw;
+    /* background-color: blue; */
+    text-transform: uppercase;
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-family: silk serif;
+    font-weight: 100;
+    left: -10%;
+    top: 8%;
+}
+.underline{
+    height: 1px;
+    width: 150%;
+    background-color: #fff;
+    margin: 3vw 0;
+    /* left: 0; */
+    right: 50vw;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;
+}
+#footer-div h6{
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+.box{
+    width: 20%;
+}
+#footer-div h5{
+    font-size: 3vw;
+    font-weight: 500;
+    /* margin: 0.2vh 0; */
+}
+#footer>h5{
+    font-weight: 500;
+    font-size: 3vw;
+}
+
 }
